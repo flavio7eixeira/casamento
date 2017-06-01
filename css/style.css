@@ -1850,8 +1850,9 @@ ul.aglieits-nav li a:hover{
 	    letter-spacing: 1px;
 }
 .copy-right p a{
-	color: #fc3158;
+	color: #f39bac;
 	text-decoration:none;
+  font-weight:bold;
 }
 .copy-right p a:hover{
 	color:#fff;
