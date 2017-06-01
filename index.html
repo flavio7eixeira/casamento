@@ -406,11 +406,13 @@
        <div class="w3_mail_grids">
 				<form action="https://formspree.io/flavio.augustot@gmail.com" method="post">
 					<div class="col-md-6 w3_agile_mail_grid">
-						<textarea name="Message" placeholder="Sua mensagem" required=""></textarea>
+						<textarea name="message" placeholder="Sua mensagem" required=""></textarea>
 					</div>
 					<div class="col-md-6 w3_agile_mail_grid">
-							<input type="text" placeholder="Seu nome"  required="">
-							<input type="email" placeholder="Seu email" required="">
+							<input type="text" name="nome" placeholder="Seu nome"  required="">
+							<input type="email" name="email" placeholder="Seu email" required="">
+							<!--input type="hidden" name="_next" value="//site.io/thanks.html" /-->
+							<input type="text" name="_gotcha" style="display:none" />
 							<input type="submit" value="Enviar">
 					</div>
 					<div class="clearfix"> </div>
