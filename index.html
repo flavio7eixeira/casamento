@@ -412,7 +412,6 @@
 							<input type="text" placeholder="Seu nome"  required="">
 							<input type="email" placeholder="Seu email" required="">
 							<input type="submit" value="Enviar">
-							<button onclick="abb();"></button>
 					</div>
 					<div class="clearfix"> </div>
 				</form>
@@ -480,37 +479,6 @@
 
 	<!-- //main slider-banner --> 	
 	<!-- Countdown-Timer-JavaScript -->
-	<script type="text/javascript">
-		
-function abb(){
-
-	$.ajax({
-	    headers: {"Authorization": "Basic "+btoa("api:key-2da4badea6be3fe643f42e34d86b2d01"), "Access-Control-Allow-Headers": "Content-Type"},
-	    url: "https://api.mailgun.net/v3/sandboxfc76f636cca14d7eb5f03917075305ba.mailgun.org/messages",
-	    type: "POST",
-	    dataType: 'json',
-		username:'api',
-	    password: 'key-2da4badea6be3fe643f42e34d86b2d01',
-
-	    data: {
-	        from: "postmaster@sandboxfc76f636cca14d7eb5f03917075305ba.mailgun.org",
-	        to: "flavio.augustot@gmail.com",
-	        subject: "hello",
-	        text: "text"
-	    },
-	    // cache: false,
-	    success: function() {
-	        alert('ok');
-	    },
-	    error: function() {
-	        alert('problems');
-	    }
-	})
-
-}
-
-
-	</script>>
 			<script src="js/simplyCountdown.js"></script>
 			<script>
 				var d = new Date("May 15, 2018 10:00:00");
