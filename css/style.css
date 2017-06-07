@@ -1010,23 +1010,6 @@ figure.effect-moses:hover img {
 	border-right: 6px solid #fc3158;
 	
 }
-.test-review-man img{
-    border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -mox-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-      box-shadow:0 10px 20px rgba(0, 0, 0, 0.41);
-    -webkit-box-shadow:0 10px 20px rgba(0, 0, 0, 0.41);
-    -moz-box-shadow:0 10px 20px rgba(0, 0, 0, 0.41);
-    -o-box-shadow:0 10px 20px rgba(0, 0, 0, 0.41);
-    -ms-box-shadow:0 10px 20px rgba(0, 0, 0, 0.41);    
-  width: 80%;
-  border:none;
-  border-right: 5px solid #1f1d9e;
-  
-}
-
 .test-review p img {
   background: #efeded;
 	box-shadow:none;
@@ -2267,12 +2250,6 @@ ul.aglieits-nav li a:hover{
 		margin: 0 auto;
 		width: 29%;
 	}
-
-  .test-review-man img {
-    margin: 0 auto;
-    width: 29%;
-  }
-
 	.wthree-right {
 		width: 100%;
 	}
