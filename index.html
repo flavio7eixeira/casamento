@@ -12,11 +12,35 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
 
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		$.urlParam = function(name){
+		    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+		    if (results==null){
+		       return null;
+		    }
+		    else{
+		       return decodeURI(results[1]) || 0;
+		    }
+		}
+
+		function showSec(){
+
+			var suc = $.urlParam('suc');
+
+			if(suc != null)
+				$('#suc').show();
+		}
+
+	</script>
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+
+	</script>
 
 </head>
-<body>
+<body onload="showSec()">
 
 	<header>
 		<div class="container">
@@ -55,7 +79,10 @@
 	</header>
 	<!-- //header -->
 	<!-- banner-slider -->
-
+	<div id="suc" class="alert alert-success fade in alert-dismissable" style="margin-top:18px; display: none">
+	    <a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+	    <strong>Sucesso!</strong> A confirmação de sua presença foi realizada! =D.
+	</div>
 	<div class="w3ls_banner_section">
 		<div class="snow-container">
 			<div class="snow foreground"></div>
@@ -187,9 +214,6 @@
 			</div>
 		</div>
 	</div>
-
-	
-
 	<!--//story-->
 
 	<!--/counter-->
@@ -205,9 +229,7 @@
 				<div class="simply-countdown-losange" id="simply-countdown-losange"></div>
 				<div class="clearfix"></div>
 			</section>
-
 			<!--//timer-->
-
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -252,7 +274,7 @@
 					<div class="item-owl">
 						<div class="test-review">
 							<img src="images/pa12.jpg" class="img-responsive" alt=""/>
-							<h5>Felipe</h5>
+							<h5>Filipe</h5>
 						</div>
 					</div>
 
@@ -460,7 +482,7 @@
 							<div class="col-md-6 w3_agile_mail_grid">
 								<input type="text" name="nome" placeholder="Seu nome"  required="">
 								<input type="email" name="email" placeholder="Seu email" required="">
-								<input type="hidden" name="_next" value="https://flavio7eixeira.github.io/casamento/sucesso.html" />
+								<input type="hidden" name="_next" value="https://flavio7eixeira.github.io/casamento/index.html?suc=1" />
 								<input type="hidden" name="_language" value="pt" />
 								<input type="submit" value="Enviar">
 							</div>
@@ -471,30 +493,12 @@
 			</div>		
 		</div>
 
-		<!--//bottom-->
 		<!-- footer -->
 		<div class="agile-footer">
 			<div class="container">
 				<div class="aglie-info-logo">
 					<div class="banner-mid-wthree hvr-buzz"><img src="images/couple.png" /></div>
 				</div>
-<!-- 			<ul class="aglieits-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="gallery.html">Wedding Albums</a></li>
-				<li><a href="icons.html">Icons</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul> -->
-			<div class="w3_agileits_social_media">
-				<ul>
-
-						<!-- <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="wthree_behance"><i class="fa fa-behance" aria-hidden="true"></i></a></li> -->
-					</ul>
-				</div>
-
 				<div class="copy-right">
 					<p>© 2017 Flávio & Daiane | Desenvolvido por 
 						<a href="http://www.linkedin.com/in/flavio7eixeira/">Flávio Teixeira</a></p>
@@ -503,8 +507,7 @@
 			</div>
 			<!-- //footer -->
 
-			<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script><!-- Required-js -->
-			<script src="js/bootstrap.min.js"></script><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="js/bootstrap.min.js"></script>
 			<script src="js/responsiveslides.min.js"></script>
 			<script>
 								// You can also use "$(window).load(function() {"
@@ -526,22 +529,16 @@
 
 								});
 							</script>
-							<!-- js -->
-
-							<!-- //main slider-banner --> 	
-							<!-- Countdown-Timer-JavaScript -->
 							<script src="js/simplyCountdown.js"></script>
 							<script>
-								var d = new Date("May 15, 2018 10:00:00");
+								var d = new Date("May 12, 2018 10:00:00");
 
-				// default example
 				simplyCountdown('.simply-countdown-one', {
 					year: d.getFullYear(),
 					month: d.getMonth() + 1,
 					day: d.getDate()
 				});
 
-				// inline example
 				simplyCountdown('.simply-countdown-inline', {
 					year: d.getFullYear(),
 					month: d.getMonth() + 1,
@@ -549,7 +546,6 @@
 					inline: true
 				});
 
-				//jQuery example
 				$('#simply-countdown-losange').simplyCountdown({
 					year: d.getFullYear(),
 					month: d.getMonth() + 1,
@@ -557,11 +553,10 @@
 					enableUtc: false
 				});
 			</script>
-			<!-- //Countdown-Timer-JavaScript -->
-			<!-- required-js-files-->
 			<link href="css/owl.carousel.css" rel="stylesheet">
 			<script src="js/owl.carousel.js"></script>
 			<script>
+
 				$(document).ready(function() {
 					$("#owl-demo").owlCarousel({
 						items :5,
@@ -595,28 +590,15 @@
 
 				});
 			</script>
-			<!--//required-js-files-->
-
-			<!-- here stars scrolling icon -->
 			<script type="text/javascript">
 				$(document).ready(function() {
-					/*
-						var defaults = {
-						containerID: 'toTop', // fading element id
-						containerHoverID: 'toTopHover', // fading element hover id
-						scrollSpeed: 1200,
-						easingType: 'linear' 
-						};
-						*/
-
 						$().UItoTop({ easingType: 'easeOutQuart' });
-
 					});
 				</script>
-				<!-- start-smoth-scrolling -->
 				<script type="text/javascript" src="js/move-top.js"></script>
 				<script type="text/javascript" src="js/easing.js"></script>
 				<script type="text/javascript">
+
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){		
 							event.preventDefault();
@@ -624,7 +606,5 @@
 						});
 					});
 				</script>
-				<!-- start-smoth-scrolling -->
-				<!-- //here ends scrolling icon -->	
 			</body>
 			</html>
