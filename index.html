@@ -179,9 +179,12 @@
 						<h4>Clique e veja...</h4>
 						<p style="color:white;">
 							Lista de presentes
-							<a href="http://www.casasbahia.com.br"> 
+							<a data-toggle="modal" href="#myModal">
 								<b><font  size="1" color="#ff33cc">CLIQUE AQUI</font></b>
 							</a>
+						<!-- 	<a href="http://www.casasbahia.com.br"> 
+								<b><font  size="1" color="#ff33cc">CLIQUE AQUI</font></b>
+							</a> -->
 						</p>
 					</figcaption>			
 				</figure>
@@ -490,7 +493,31 @@
 				</div>
 			</div>		
 		</div>
-
+		<div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog modal-sm">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Nossas listas de presentes</h4>
+		        </div>
+		        <div class="modal-body">
+			        <div >
+			        	<a href="www.casasbahia.com.br">
+			        		<img src="images/casabahia.png" alt="Lista de presentes Casas Bahia"/> - CASAS BAHIA
+			        	</a>
+			        </div>
+	    			<div >
+			        	<a href="www.cvc.com.br">
+			        		<img src="images/cvc.png" alt="CVC"/> - CVC
+			        	</a>
+			        </div>
+			    </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+		        </div>
+		      </div>
+		    </div>
+		</div>
 		<!-- footer -->
 		<div class="agile-footer">
 			<div class="container">
