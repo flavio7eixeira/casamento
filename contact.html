@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-<title>Flávio & Daiane</title>    
-<link rel="icon" href="images/ring.png" type="image/x-icon" />
-<link rel="shortcut icon" href="images/ring.png" type="image/x-icon" />
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- fontawesome css -->     
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- Bootstrap stylesheet -->
-<link href="css/snow.css" rel="stylesheet" type="text/css" media="all" /><!-- stylesheet -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!-- stylesheet -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Flávio & Daiane</title>    
+	<link rel="icon" href="images/ring.png" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/ring.png" type="image/x-icon" />
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/snow.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
 	<header>
@@ -24,7 +24,6 @@
 						</button>
 						<div>
 							<h1><img src="images/in-love.png"/></h1>
-							<!--p class="sub_title">Flávio & Daiane</p -->
 						</div>	
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -54,23 +53,22 @@
 		<div class="container">
 
 			<div class="w3_mail_grids">
-			<form action="https://formspree.io/flavio.augustot@gmail.com" method="post">
-				<div class="col-md-6 w3_agile_mail_grid">
-					<textarea name="message" placeholder="Escreva sua dúvida" required=""></textarea>
-				</div>
-				<div class="col-md-6 w3_agile_mail_grid">
-					<input type="text" name="nome" placeholder="Seu nome"  required="">
-					<input type="email" name="email" placeholder="Seu email" required="">
-					<input type="hidden" name="_next" value="http://flavioedaiane.com.br/index.html?suc=1" />
-					<input type="hidden" name="_language" value="pt" />
-					<input type="submit" value="Enviar">
-				</div>
-				<div class="clearfix"> </div>
-			</form>
+				<form action="https://formspree.io/flavio.augustot@gmail.com" method="post">
+					<div class="col-md-6 w3_agile_mail_grid">
+						<textarea name="message" placeholder="Escreva sua dúvida" required=""></textarea>
+					</div>
+					<div class="col-md-6 w3_agile_mail_grid">
+						<input type="text" name="nome" placeholder="Seu nome"  required="">
+						<input type="email" name="email" placeholder="Seu email" required="">
+						<input type="hidden" name="_next" value="http://flavioedaiane.com.br/index.html?suc=1" />
+						<input type="hidden" name="_language" value="pt" />
+						<input type="submit" value="Enviar">
+					</div>
+					<div class="clearfix"> </div>
+				</form>
 			</div>
 		</div>		
 	</div>
-	<!-- footer -->
 	<div class="agile-footer">
 		<div class="container">
 			<div class="aglie-info-logo">
@@ -80,7 +78,24 @@
 				<p>© 2017 Flávio & Daiane | Desenvolvido por 
 					<a href="http://www.linkedin.com/in/flavio7eixeira/">Flávio Teixeira</a></p>
 				</div>
+			</div>
 		</div>
-	</div>
-</body>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {								
+				$().UItoTop({ easingType: 'easeOutQuart' });				
+			});
+		</script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	</body>
 </html>
