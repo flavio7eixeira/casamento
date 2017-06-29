@@ -54,7 +54,7 @@ html, body {
 /*-- header --*/
 header {
 	padding:20px 0;
-	background: rgb(88, 45, 64);
+	background: #220a29;
 }
 .logo {
     float: left;
@@ -1776,7 +1776,7 @@ p.wthree_agileits {
 .agile-footer {
     padding: 5em 0;
     text-align: center;
-    background: #0b67d4;
+    background: #220a29;
 }
 ul.aglieits-nav{
 	padding:3em 0 0;
