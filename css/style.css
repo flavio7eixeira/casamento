@@ -214,10 +214,10 @@ ul.nav.navbar-nav li a:hover {
 }
 .banner_agile-info p {
     font-size: 1em;
-    color: #fc3158;
+    color: #FFFFFF;
     letter-spacing: 10px;
         margin: 1em 0 2em 0;
-	    text-shadow: 3px 3px 3px rgb(23, 22, 22);
+	    text-shadow: 4px 4px 4px rgb(23, 22, 22);
 }
 /* Buzz */
 @-webkit-keyframes hvr-buzz {
